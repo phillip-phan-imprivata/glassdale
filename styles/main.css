@@ -1,6 +1,18 @@
-.criminalsContainer {
+.criminalsContainer, 
+.filters__crime, 
+.filters__incarceration,
+.filters__officer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  margin: 10px;
+}
+
+.filter {
+  margin: 10px;
 }
 
 .criminal__card {
