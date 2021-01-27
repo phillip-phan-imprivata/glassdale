@@ -55,6 +55,10 @@ eventHub.addEventListener("associatesClicked", e => {
     alert(associates)
 })
 
+eventHub.addEventListener("criminalButtonClick", e => {
+    CriminalList()
+})
+
 const render = criminalCollection => {
     contentTarget.innerHTML = criminalCollection.map(criminal => Criminal(criminal)).join("")
 }
