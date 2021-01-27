@@ -21,3 +21,24 @@
   margin: 20px;
   width: 250px;
 }
+
+#showNotes {
+  width: 100px;
+  margin: 10px;
+}
+
+.note {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  border: 1px black dashed;
+}
+
+.middle__container {
+  display: flex;
+  margin: 10px 20px;
+}
+
+.noteFormContainer {
+  margin: 10px 20px;
+}
