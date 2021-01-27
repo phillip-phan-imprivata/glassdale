@@ -39,6 +39,22 @@ eventHub.addEventListener("officerSelected", event => {
     render(matchingCriminals)
 })
 
+eventHub.addEventListener("associatesClicked", e => {
+    const criminalsArr = useCriminals()
+    const chosenCriminal = criminalsArr.find(criminal => {
+        return criminal.id === parseInt(e.detail.criminalId)
+    })
+
+    const associates = chosenCriminal.known_associates.map(associate => {
+        return `
+        Name: ${associate.name}
+        Alibi: ${associate.alibi}
+        `
+    }).join("")
+    
+    alert(associates)
+})
+
 const render = criminalCollection => {
     contentTarget.innerHTML = criminalCollection.map(criminal => Criminal(criminal)).join("")
 }
