@@ -9,11 +9,7 @@ eventHub.addEventListener("click", clickEvent => {
 })
 
 eventHub.addEventListener("notesButtonClicked", e => {
-    if (document.getElementById("showNotes").innerHTML === "Show Notes") {
-        document.getElementById("showNotes").innerHTML = "Hide Notes"
-    } else if (document.getElementById("showNotes").innerHTML === "Hide Notes") {
-        document.getElementById("showNotes").innerHTML = "Show Notes"
-    }
+    document.getElementById("showNotes").innerHTML === "Show Notes" ? document.getElementById("showNotes").innerHTML = "Hide Notes" : document.getElementById("showNotes").innerHTML = "Show Notes"
 })
 
 export const ShowNoteButton = () => {
