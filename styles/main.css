@@ -1,9 +1,17 @@
+header {
+  display: flex;
+}
+
 .criminalsContainer, 
 .filters__crime, 
 .filters__incarceration,
 .filters__officer {
   display: flex;
   flex-wrap: wrap;
+}
+
+#showWitnesses {
+  margin: 18px 20px 0 20px;
 }
 
 .filters {
@@ -16,6 +24,13 @@
 }
 
 .criminal__card {
+  border: 1px dashed black;
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+}
+
+.witness__card {
   border: 1px dashed black;
   padding: 10px;
   margin: 20px;
