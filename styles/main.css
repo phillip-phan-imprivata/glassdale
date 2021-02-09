@@ -3,6 +3,7 @@ header {
 }
 
 .criminalsContainer, 
+.facilityContainer,
 .filters__crime, 
 .filters__incarceration,
 .filters__officer {
@@ -10,7 +11,8 @@ header {
   flex-wrap: wrap;
 }
 
-#showWitnesses {
+#showWitnesses, 
+#showFacilities {
   margin: 18px 20px 0 20px;
 }
 
@@ -23,7 +25,8 @@ header {
   margin: 10px;
 }
 
-.criminal__card {
+.criminal,
+.facility {
   border: 1px dashed black;
   padding: 10px;
   margin: 20px;
